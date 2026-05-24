@@ -1,49 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <title>¡codeBychristian</title>
 <style>
 body {
-font-family: Arial, sans-serif;
-background-color:black;
-text-align: center;
-padding: 50px;
+    font-family: Arial, sans-serif;
+    background-image: url('https://i.pinimg.com/1200x/95/8b/5a/958b5a0c1e9799570020e370e6e9a4a7.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+
 h1{
 color: azure;
-
+font-size: 2.5rem;
 }
+
 p{
 color: aliceblue;
-font-size:18px;
+font: size 1.1rem;
 }
-button{
-background-color: black;
-color:white;
-border: none ;
-padding: 10px 20px;
-font-size: 16px;
+.btn-interactive{
+background-color: blue;
+color: white;
+padding: 14px 28px;
+font-size: 1.1rem;
+font-weight: bold;
+border: none;
+border-radius: 8px;
 cursor: pointer;
-border-radius: 5px;
-}button{
-background-color: black;
 }
  
 img{
     max-width: 100%;
     border-radius: 10px;
 }
-
 </style>
-</head>
 <body>
-<h1>¡bienvenido¡</h1>
+<h1>¡Bienvenido¡</h1>
 <p>Esta es mi primera pagina web oficial construida desde cero.</p>
-<img src="https://i.pinimg.com/1200x/95/8b/5a/958b5a0c1e9799570020e370e6e9a4a7.jpg" alt="mi primera foto">
-<button onclick="alert('¡gracias por hacer clic! sigue aprendiendo.')">
-¡haz clic aqui!
+ 
+<button class="btn-interactive" onclick="alert('¡hola!soy christiany este es mi primer gran paso en el desarrollo web')">
+
+    ¡haz clic aqui!
 </button>
+
 
 </body>
 </html>
