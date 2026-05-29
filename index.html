@@ -1,60 +1,130 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>¡codeBychristian</title>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    background-image: url('https://i.pinimg.com/1200x/95/8b/5a/958b5a0c1e9799570020e370e6e9a4a7.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-
-h1{
-color: azure;
-font-size: 2.5rem;
-}
-
-p{
-color: aliceblue;
-font: size 1.1rem;
-}
-.btn-interactive{
-background-color: blue;
-color: white;
-padding: 14px 28px;
-font-size: 1.1rem;
-font-weight: bold;
-border: none;
-border-radius: 8px;
-cursor: pointer;
-}
- 
-img{
-    max-width: 100%;
-    border-radius: 10px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños Davdi!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        header {
+            margin: 40px 0;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #ff4757;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2rem;
+            color: #57606f;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            width: 280px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            width: 100%;
+            height: 380px; /* Un poco más alto para que las capturas de celular se vean bien */
+            object-fit: cover;
+        }
+        .card-text {
+            padding: 15px;
+            font-size: 0.95rem;
+            color: #2f3542;
+            text-align: left;
+        }
+        .message-box {
+            background: white;
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            border-left: 5px solid #ff4757;
+        }
+        .message-box p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            font-style: italic;
+        }
+        footer {
+            margin: 60px 0 20px 0;
+            font-size: 0.9rem;
+            color: #747d8c;
+        }
+        .btn {
+            background-color: #ff4757;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.2s;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #e84118;
+        }
+    </style>
+</head>
 <body>
-<h1>¡Bienvenido¡</h1>
-<p>Esta es mi primera pagina web oficial construida desde cero.</p>
- 
-<button class="btn-interactive" onclick="alert('¡hola!soy christian y este es mi primer gran paso en el desarrollo web')">
 
-    ¡haz clic aqui!
-</button>
+    <header>
+        <h1>¡Feliz Cumpleaños, Davdi! 🎂</h1>
+        <p class="subtitle">Un pequeño detalle para celebrar tu día</p>
+    </header>
 
+    <div class="message-box">
+        <p>"¡Feliz Cumpleaños mi bro! Espero que tengas un día genial, que cumplas muchos años mas bro. ¡FELICIDADES!"</p>
+    </div>
 
+   
+
+    </div>
+
+    <a href="https://youtu.be/ocpDEOXABWg?list=RDocpDEOXABWg="btn">¡Haz clic para tu sorpresa! 🎉</a>
+
+    <footer>
+        <p>Hecho con  por tu hermano de otra madre.</p>
+    </footer>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                alert("¡Feliz cumpleaños bro! 🎉");
+            }, 500);
+        });
+    </script>
 </body>
 </html>
 
